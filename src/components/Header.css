@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+  --accent: #111;         
+  --muted: #777;
+  --bg: #fff;
+  --shadow: 0 6px 18px rgba(0,0,0,0.06);
+  --container-w: 1200px;
+}
+
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1100;
+  background: var(--bg);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.06);
+  font-family: 'Poppins', sans-serif;
+}
+
+
+.container {
+  max-width: var(--container-w);
+  margin: 0 auto;
+  padding: 12px 20px;
+  box-sizing: border-box;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  justify-content: space-between;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+.top-left .brand img {
+  height: 44px;          
+  display: block;
+}
+
+
+.top-center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex: 1;
+  justify-content: center;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.search-pill {
+  width: 360px;                
+  max-width: 40%;
+  min-width: 180px;
+  padding: 14px 18px;
+  border-radius: 999px;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+  background: #fff;
+  outline: none;
+  font-size: 0.95rem;
+  color: #222;
+}
+
+.search-pill::placeholder { color: #bdbdbd; }
+
+.search-btn {
+  padding: 12px 22px;
+  border-radius: 999px;
+  border: none;
+  background: #111; 
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+.top-right { min-width: 170px; display:flex; justify-content:flex-end; align-items:center; }
+
+.saved-jobs {
+  background: transparent;
+  border: none;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.nav-row {
+  border-top: 1px solid rgba(0,0,0,0.04);
+  background: transparent;
+}
+
+.nav-inner {
+  padding: 14px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.main-nav{
+  display: flex;
+  gap: 36px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  color: #222;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+
+.main-nav li { display: inline-flex; align-items:center; gap:8px; cursor:pointer; }
